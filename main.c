@@ -3,7 +3,13 @@
 int main()
 {
     int age;
-    printf("Enter age and name:");
+    char name[50];
+
+    printf("Enter name:");
+    scanf("%s", &name);
+
+    printf("Enter age:");
     scanf("%d", &age);
-    printf("You are %d years old", age);
+
+    printf("%s is %d", name, age);
 }
